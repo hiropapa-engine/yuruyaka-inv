@@ -9,4 +9,7 @@ class UserController extends Controller
     public function showJibunSim() {
         return view('jibun_sim');
     }
+    public function calcJibunSim(Request $request) {
+        return view('jibun_sim');
+    }
 }

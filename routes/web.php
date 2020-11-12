@@ -22,4 +22,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function() {
         return view('dashboard');
     })->name('dashboard');
     Route::get('/jibun_sim', 'App\Http\Controllers\UserController@showJibunSim')->name('jibun_sim');
+    Route::post('/jibun_sim', 'App\Http\Controllers\UserController@calcJibunSim')->name('jibun_sim');
 });
